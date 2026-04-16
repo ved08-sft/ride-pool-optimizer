@@ -12,11 +12,9 @@ const CustomerDashboard = () => {
   const [drivers, setDrivers] = useState({});
   const [matchedDriverId, setMatchedDriverId] = useState(null);
   const [currentRequestId, setCurrentRequestId] = useState(null);
-  const [simulationSocket, setSimulationSocket] = useState(null);
   
   useEffect(() => {
      const socket = io("http://localhost:5000");
-     setSimulationSocket(socket);
      
      socket.on("simulation_update", (state) => {
          setDrivers(state.drivers);
