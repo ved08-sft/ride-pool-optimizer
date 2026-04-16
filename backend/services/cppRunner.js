@@ -3,7 +3,7 @@ const path = require("path");
 
 const runCpp = () => {
   return new Promise((resolve, reject) => {
-    const exePath = path.join(__dirname, "../cpp_engine/engine.exe");
+    const exePath = path.join(__dirname, "../cpp_engine/engine");
     const cppDir = path.join(__dirname, "../cpp_engine");
 
     exec(`"${exePath}"`, { cwd: cppDir }, (error, stdout, stderr) => {
