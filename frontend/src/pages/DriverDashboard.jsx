@@ -1,6 +1,6 @@
 import { API_URL } from '../config';
 import { useState, useEffect } from "react";
-import { User, MapPin, Check, Clock, Navigation } from "lucide-react";
+import { User, MapPin, Clock, Navigation } from "lucide-react";
 import Map from "../components/Map"; 
 import { LOCATIONS } from "../utils/locations";
 import { io } from "socket.io-client";
@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const DriverDashboard = () => {
   const navigate = useNavigate();
-  const [driverId, setDriverId] = useState('driver-1');
+  const [driverId] = useState('driver-1');
   const [activeDriver, setActiveDriver] = useState(null);
   const [groups, setGroups] = useState({});
   const [driversMap, setDriversMap] = useState({});
@@ -55,11 +55,11 @@ const DriverDashboard = () => {
   // Filter groups to only show ones where PENDING_DRIVER_ACCEPT and this driver is an option
   const availableGroups = Object.values(groups).filter(g => {
        if (g.status !== "PENDING_DRIVER_ACCEPT") return false;
-       return g.driverOptions.some(opt => opt.driver_id == driverId.split('-')[1]);
+       return g.driverOptions.some(opt => String(opt.driver_id) === driverId.split('-')[1]);
   });
 
   const handleAcceptGroup = async (group) => {
-    const opt = group.driverOptions.find(o => o.driver_id == driverId.split('-')[1]);
+    const opt = group.driverOptions.find(o => String(o.driver_id) === driverId.split('-')[1]);
     try {
         await fetch(`${API_URL}/api/rides/group/driver_accept`, {
             method: "POST",
@@ -200,7 +200,7 @@ const DriverDashboard = () => {
           </h3>
 
           {availableGroups.map(grp => {
-            const opt = grp.driverOptions.find(o => o.driver_id == driverId.split('-')[1]);
+            const opt = grp.driverOptions.find(o => String(o.driver_id) === driverId.split('-')[1]);
             return (
               <div key={grp.id} className="card p-4 hover:border-purple-500 cursor-pointer transition-all">
                 <div className="flex justify-between items-center mb-3">
