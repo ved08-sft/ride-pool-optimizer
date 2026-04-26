@@ -25,7 +25,7 @@ const CustomerDashboard = () => {
      // Retrieve user info
      const token = localStorage.getItem("token");
      if (!token) { navigate("/login"); return; }
-     const user = JSON.parse(localStorage.getItem("user") || "{}");
+     JSON.parse(localStorage.getItem("user") || "{}");
 
      const socket = io(`${API_URL}`);
 
@@ -120,7 +120,7 @@ const CustomerDashboard = () => {
               headers: {"Content-Type": "application/json"},
               body: JSON.stringify({ groupId: groupDetails.groupId, reqId, confirm })
           });
-          const data = await res.json();
+          await res.json();
           if (confirm) setFlowState('WAITING_DRIVER');
           else setFlowState('WAITING'); 
       } catch(e) {}
