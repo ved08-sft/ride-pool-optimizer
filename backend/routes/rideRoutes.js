@@ -1,13 +1,26 @@
 const express = require("express");
 const router = express.Router();
 
-const { requestRide, getDriverState, acceptRideList, updateDriverLocation, cancelRide } = require("../controllers/rideController");
+const { 
+  requestRide, 
+  getDriverState, 
+  cancelRide,
+  passengerConfirmGroup,
+  driverAcceptGroup,
+  passengerFinalConfirm,
+  startJourney,
+  setDriverLocation
+} = require("../controllers/rideController");
 
-// Disable protect temporarily while testing dynamic flow
 router.post("/request", requestRide);
 router.post("/cancel", cancelRide);
+
 router.get("/driver/state", getDriverState);
-router.post("/driver/accept", acceptRideList);
-router.post("/driver/location", updateDriverLocation);
+router.post("/driver/location", setDriverLocation);
+
+router.post("/group/passenger_confirm", passengerConfirmGroup);
+router.post("/group/driver_accept", driverAcceptGroup);
+router.post("/group/passenger_final_confirm", passengerFinalConfirm);
+router.post("/driver/start_journey", startJourney);
 
 module.exports = router;

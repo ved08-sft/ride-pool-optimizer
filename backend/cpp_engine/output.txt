@@ -1,6 +1,72 @@
-Driver: 999
-Total_Distance: 3.26835
-Route_Size: 3
-DRIVER_START 0 28.63 77.21
-PICKUP 7461 28.6315 77.2167
-DROP 7461 28.6129 77.2295
+[
+  {
+    "driver_id": 1,
+    "total_distance": 2.50624,
+    "total_time": 2.14821,
+    "passengers": [767360],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.6315, "y": 77.2167},
+      {"type": "PICKUP", "pass_id": 767360, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 767360, "x": 28.6129, "y": 77.2295}
+    ]
+  },
+  {
+    "driver_id": 1,
+    "total_distance": 2.50624,
+    "total_time": 2.14821,
+    "passengers": [767360, 942352],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.6315, "y": 77.2167},
+      {"type": "PICKUP", "pass_id": 767360, "x": 28.6315, "y": 77.2167},
+      {"type": "PICKUP", "pass_id": 942352, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 767360, "x": 28.6129, "y": 77.2295},
+      {"type": "DROP", "pass_id": 942352, "x": 28.6129, "y": 77.2295}
+    ]
+  },
+  {
+    "driver_id": 1,
+    "total_distance": 2.50624,
+    "total_time": 2.14821,
+    "passengers": [942352],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.6315, "y": 77.2167},
+      {"type": "PICKUP", "pass_id": 942352, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 942352, "x": 28.6129, "y": 77.2295}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 11.7407,
+    "total_time": 10.0635,
+    "passengers": [767360],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 767360, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 767360, "x": 28.6129, "y": 77.2295}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 11.7407,
+    "total_time": 10.0635,
+    "passengers": [767360, 942352],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 767360, "x": 28.6315, "y": 77.2167},
+      {"type": "PICKUP", "pass_id": 942352, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 767360, "x": 28.6129, "y": 77.2295},
+      {"type": "DROP", "pass_id": 942352, "x": 28.6129, "y": 77.2295}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 11.7407,
+    "total_time": 10.0635,
+    "passengers": [942352],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 942352, "x": 28.6315, "y": 77.2167},
+      {"type": "DROP", "pass_id": 942352, "x": 28.6129, "y": 77.2295}
+    ]
+  }
+]

@@ -15,6 +15,12 @@ struct Passenger {
     Passenger() : is_picked_up(false), is_dropped_off(false) {}
 };
 
+struct Driver {
+    int id;
+    double x, y;
+    int capacity;
+};
+
 struct Point {
     double x, y;
     int pass_id;
@@ -25,7 +31,8 @@ struct Ride {
     int driver_id;
     vector<int> passengers;
     double total_distance;
-    vector<Point> route; // The chronologically ordered list of coordinates
+    double total_time;
+    vector<Point> route;
 };
 
 #endif

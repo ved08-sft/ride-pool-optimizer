@@ -1,0 +1,72 @@
+[
+  {
+    "driver_id": 1,
+    "total_distance": 30.0506,
+    "total_time": 25.7577,
+    "passengers": [100],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.63, "y": 77.21},
+      {"type": "PICKUP", "pass_id": 100, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 100, "x": 28.6, "y": 77.2}
+    ]
+  },
+  {
+    "driver_id": 1,
+    "total_distance": 30.0506,
+    "total_time": 25.7577,
+    "passengers": [100, 200],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.63, "y": 77.21},
+      {"type": "PICKUP", "pass_id": 100, "x": 28.53, "y": 77.1},
+      {"type": "PICKUP", "pass_id": 200, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 100, "x": 28.6, "y": 77.2},
+      {"type": "DROP", "pass_id": 200, "x": 28.6, "y": 77.2}
+    ]
+  },
+  {
+    "driver_id": 1,
+    "total_distance": 30.0506,
+    "total_time": 25.7577,
+    "passengers": [200],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.63, "y": 77.21},
+      {"type": "PICKUP", "pass_id": 200, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 200, "x": 28.6, "y": 77.2}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 24.8691,
+    "total_time": 21.3164,
+    "passengers": [100],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 100, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 100, "x": 28.6, "y": 77.2}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 24.8691,
+    "total_time": 21.3164,
+    "passengers": [100, 200],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 100, "x": 28.53, "y": 77.1},
+      {"type": "PICKUP", "pass_id": 200, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 100, "x": 28.6, "y": 77.2},
+      {"type": "DROP", "pass_id": 200, "x": 28.6, "y": 77.2}
+    ]
+  },
+  {
+    "driver_id": 2,
+    "total_distance": 24.8691,
+    "total_time": 21.3164,
+    "passengers": [200],
+    "route": [
+      {"type": "DRIVER_START", "pass_id": 0, "x": 28.55, "y": 77.2},
+      {"type": "PICKUP", "pass_id": 200, "x": 28.53, "y": 77.1},
+      {"type": "DROP", "pass_id": 200, "x": 28.6, "y": 77.2}
+    ]
+  }
+]

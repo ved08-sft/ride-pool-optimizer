@@ -5,5 +5,77 @@
     "email": "ruvit@gmail.com",
     "password": "$2b$10$aYczSFVKmrIKwup2QhCTyeFLWLI1d5Gm6ezMEZGO4RiRgxsctNqVe",
     "role": "driver"
+  },
+  {
+    "id": 1777115550291,
+    "name": "DEV",
+    "email": "DEV@example.com",
+    "password": "$2b$10$R7z8rveAEgdCrr6.k4KTg.o00qJszwxyeq6XTSS.pKDyHKhm8Ntfm",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777115999866,
+    "name": "MANOJ",
+    "email": "MAN@example.com",
+    "password": "$2b$10$I1h1EXXBgMkLG0BpKU.xt.LSDfnwvTLpcJDbgNBkpQITZPpWEdPP.",
+    "role": "driver",
+    "age": "24",
+    "gender": "Male"
+  },
+  {
+    "id": 1777116034610,
+    "name": "VEER",
+    "email": "veer@example.com",
+    "password": "$2b$10$KNH6d.3RNm5Zgyx5v5n2xOJB/rk4uNJ.tkyQEJK4rQtqfv0mCTqbK",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777192144221,
+    "name": "Test User",
+    "email": "veer1@example.com",
+    "password": "$2b$10$0t6MfMBbZAnk/qJBTn1b/uHVsnK.h7jevjhirclRNLBPArg3bNxU6",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777192184288,
+    "name": "Test User",
+    "email": "user@example.com",
+    "password": "$2b$10$qwGIKVHkwlbnQV5LRCSuzejGPCI2AHRdEiwDcKkpNx2tnQ4RgHjci",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777192324563,
+    "name": "Test User",
+    "email": "user1@example.com",
+    "password": "$2b$10$LP1InG7zkNvVcHMRRsL87OZAvfw1JRh0URXQaGKa8W0ktH8yVd3R2",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777192357073,
+    "name": "Test User",
+    "email": "user11@example.com",
+    "password": "$2b$10$e0qZwKmrMvXWkkSFlio/9e9BYtkypx9rdjA7EZLI.7Ol3gMafw92i",
+    "role": "driver",
+    "age": "25",
+    "gender": "Male"
+  },
+  {
+    "id": 1777193046382,
+    "name": "Test User",
+    "email": "user2@example.com",
+    "password": "$2b$10$WkHTBU.pA3LkhgGgVj2BLea0BY3RoxhlhsEK9yXNrZEi0k5KMZMpC",
+    "role": "customer",
+    "age": "25",
+    "gender": "Male"
   }
 ]
